@@ -23,10 +23,11 @@ pred irange(n:Int) {
                    n = {5} or
                    n = {6} or
                    n = {7} or
-                   n = {8} or
+                   n = {8}/* or
                    n = {9} or
                   n = {10} or
-                   n = {11} 
+                   n = {11} */
+// Diatonic comment
 }
 
 fact prange {
@@ -108,7 +109,7 @@ fact {
 
 
 pred show{
-  A and par5
+  A and  !par5
 }
 
-run show for 5 Int, 2 Note
+run show for 5 Int, exactly 4 Note
